@@ -1,0 +1,17 @@
+{
+  "container_definitions": [
+    {
+      "name": "app",
+      "port_mappings": [
+        {
+          "protocol": "tcp",
+          "container_port": 80,
+          "host_port": 0
+        }
+      ],
+      "image": "",
+      "environment": null
+    }
+  ],
+  "family": "codelift-aspnetwwt-web-client"
+}
