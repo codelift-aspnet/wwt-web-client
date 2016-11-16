@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "container_ports": [
+        {
+          "protocol": "tcp",
+          "inner_port": 80,
+          "published": true,
+          "outer_port": 5853
+        }
+      ],
+      "image": "",
+      "target_num_containers": 1,
+      "sequential_deployment": true,
+      "autorestart": "ALWAYS",
+      "autoredeploy": true,
+      "container_envvars": null
+    }
+  ],
+  "name": "codelift-aspnetwwt-web-client"
+}
