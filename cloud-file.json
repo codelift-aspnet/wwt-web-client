@@ -7,7 +7,7 @@
           "protocol": "tcp",
           "inner_port": 80,
           "published": true,
-          "outer_port": 5853
+          "outer_port": 5371
         }
       ],
       "image": "",
