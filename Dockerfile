@@ -17,7 +17,7 @@ WORKDIR c:/build
 COPY . c:/build
 RUN nuget restore \
     && "c:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" /p:Platform="Any CPU" /p:VisualStudioVersion=12.0 /p:VSToolsPath=c:\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\tools\VSToolsPath WebClientOnly.sln \
-    && xcopy c:\build\webclient\* c:inetpubwwwroot /s
+    && xcopy c:\build\webclient\* c:\inetpub\wwwroot /s
 
 EXPOSE 80
 
